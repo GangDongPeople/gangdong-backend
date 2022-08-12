@@ -1,10 +1,12 @@
 package com.zerowaste.gangdongbackend.entity;
 
 import com.zerowaste.gangdongbackend.common.constants.Role;
+import com.zerowaste.gangdongbackend.member.dto.MemberJoinReqDto;
 import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -52,4 +54,5 @@ public class Member {
     private LocalDateTime createAt;
 
     private LocalDateTime modifyAt;
+
 }
