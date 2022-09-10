@@ -13,7 +13,7 @@ import java.util.List;
 @Builder
 @Getter
 @Entity
-public class Member {
+public class Member extends BaseTime{
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -50,9 +50,5 @@ public class Member {
 
     @Column(nullable = false)
     private String detailAddress;
-
-    private LocalDateTime createAt;
-
-    private LocalDateTime modifyAt;
 
 }

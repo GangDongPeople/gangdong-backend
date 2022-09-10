@@ -1,5 +1,6 @@
 package com.zerowaste.gangdongbackend.common;
 
+import com.zerowaste.gangdongbackend.common.errorCode.MemberErrorCode;
 import lombok.Getter;
 
 @Getter
@@ -24,4 +25,5 @@ public class ZeroResBody {
     public static ZeroResBody success(Object data) {
         return success().data(data);
     }
+
 }
